@@ -3,5 +3,13 @@
 
 <app-privacy></app-privacy> -->
 
+<p [class]="[pClassNameRed,pBackGroundColor]">Lorem ipsum dolor sit amet.</p>
+<p class="form-control" [ngClass]="bgColor === 'red' ? 'red' : 'purple' ">Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Id, ad.</p>
+<input class="form-control" [class.active]="checkActive()">
+<p [style]="'background-color:' + bgColor">Lorem, ipsum.</p>
+<p [style]="{backgroundColor: bgColor, color:'violet'}">Lorem, ipsum dolor.</p>
+<p [ngStyle]="{backgroundColor: bgColor, color:'purple'}">Lorem, ipsum dolor.</p>
+
 <button (click)="clickMe()">Beni Tıkla</button>
 <input type="text" (keyup)="changeHelloWorldVariable($event)">
